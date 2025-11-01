@@ -1,14 +1,13 @@
 <div id="sidebar" class="col-md-4">
     <div class="search-box-container">
         <h4>Search</h4>
-        <form class="search-post" action="search.php" method ="GET">
-            <div class="input-group">
-                <input type="text" name="search" class="form-control" placeholder="Search .....">
-                <span class="input-group-btn">
-                    <button type="submit" class="btn btn-primary">Search</button>
-                </span>
-            </div>
-        </form>
+        <div class="input-group">
+            <input type="text" id="sidebar-live-search" class="form-control" placeholder="Live search...">
+            <span class="input-group-btn">
+                <button type="button" id="sidebar-search-btn" class="btn btn-primary">Search</button>
+            </span>
+        </div>
+        <small style="color: #7F8C8D; display: block; margin-top: 5px;">Type here to search for a specific post</small>
     </div>
     <div class="recent-post-container">
         <h4>Recent Posts</h4>

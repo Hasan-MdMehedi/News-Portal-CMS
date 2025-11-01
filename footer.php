@@ -20,5 +20,7 @@
         </div>
     </div>
 </div>
+<!-- Sidebar Live Search -->
+<script src="js/sidebar-live-search.js"></script>
 </body>
 </html>

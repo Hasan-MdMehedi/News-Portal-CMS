@@ -41,8 +41,9 @@
                             <td>{$row["category_name"]}</td>
                             <td>{$row["post"]}</td>
                             <td class='edit'><a href='update-category.php?id={$row['category_id']}' ><i class='fa fa-edit'></i></a></td>
-                            <td class='delete'><a href='delete-category.php?id={$row['category_id']}' class='js-delete' data-name="'.htmlspecialchars($row["category_name"], ENT_QUOTES).'"><i class='fa fa-trash-o'></i></a></td>
+                            <td class='delete'><a href='delete-category.php?id={$row['category_id']}'><i class='fa fa-trash-o'></i></a></td>
                         </tr>";
+
                         $serial++;
                   }
                   $table .= '</tbody></table>';
@@ -83,3 +84,5 @@
     </div>
 </div>
 <?php include "footer.php"; ?>
+<!-- Category Live Search -->
+<script src="js/category-search.js"></script>
